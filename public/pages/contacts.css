@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+h1{
+    margin: 0;
+    border: 0;
+    padding: .5em;
+    background-color: #00387d;
+    text-align: center;
+    color: white;
+}
+.container{
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+    margin: 1em 2em 2em 2em;
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 1em 2em 1em 2em;
+    font-weight: bold;
+    color: #00387d;
+}
+.flex-item {
+    background-color: #99bbe4;
+    padding: 1em 20em 1em 20em;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1em;
+    /* For slideDown method display is set to none */
+    display: none;
+}
+.flex-item:hover {
+    box-shadow: 0 0 1em darkgray;
+    transition: 1s;
+}
+a{
+    text-decoration: none;
+    color: #00387d;
+}
+iframe{
+    border: 1px solid black;
+    width: 25em;
+    height: 25em;
+}

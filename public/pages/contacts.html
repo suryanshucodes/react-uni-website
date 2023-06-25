@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="contacts.css">
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"></script>
+      <script>
+        $(document).ready(function() {
+          $(".flex-item").slideDown(1000);
+          $("#name").css({"padding-left":"4em", 'color': 'red', 'font-size': '2em', 'margin':'1em 0 0.5em 0'})
+        })
+      </script>
+  </head>
+  <body>
+    <h1>CONTACTS</h1>
+    <p id="name">Paragraph</p>
+    <script>
+      let name = prompt("What is your name?");
+      let msg = "Hi "+name+"! you can contact us through the following options";
+      console.log(msg);
+      document.getElementById('name').innerHTML = msg;
+    </script>
+    <div class="container">
+      <div class="contact-container">
+        <div class="flex-item"><a href = "mailto: uiet@pu.ac.in">Email : <em>uiet@pu.ac.in</em></a></div>
+        <div class="flex-item">Phone : 0172-2541242</div>
+        <div class="flex-item"><a href="https://www.facebook.com/uietpuofficial">Facebook</a></div>
+        <div class="flex-item"><a href="https://www.alumniaffairs.uietpu.in/">UIET Alumni Affairs</a></div>
+        <div class="flex-item">Address:<br> 
+            Sector-25, South Campus<br>
+            Chandigarh - 160014 <br>
+            INDIA
+        </div>
+      </div>
+      <div class="map">
+        <iframe scrolling="yes" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=UIET%2C%20Sector%2025&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near" aria-label="UIET, Sector 25"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
