@@ -9,7 +9,7 @@ h1{
     text-align: center;
     color: white;
 }
-.container{
+.ct-container{
     display: flex;
     gap: 5em;
     justify-content: center;
@@ -34,14 +34,14 @@ h1{
 }
 .flex-item:hover {
     box-shadow: 0 0 1em darkgray;
-    transition: 1s;
 }
 a{
     text-decoration: none;
     color: #00387d;
 }
-iframe{
+.contacts-map > iframe{
     border: 1px solid black;
     width: 25em;
     height: 25em;
+    border-radius: 10px;
 }

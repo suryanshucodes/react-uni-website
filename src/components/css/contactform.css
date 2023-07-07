@@ -18,8 +18,12 @@ body {
 .header {
     margin: 0;
     border: 0;
-    padding: 1.5em;
+    padding: 1.5rem;
     background-color: #00387d;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Lora', sans-serif;;
+    color: white;
 }
 form {
     background-color: #e8f9f9;
@@ -35,9 +39,4 @@ form:hover {
     box-shadow: 0 0 1em rgb(199, 198, 198);
     background-color: lightblue;
     transition: 1s;
-}
-h1 {
-    text-align: center;
-    font-family: 'Lora', sans-serif;;
-    color: #014aa3;
 }

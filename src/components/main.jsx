@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {Link} from 'react-router-dom';
 
 function Main() {
 
@@ -77,7 +78,7 @@ function Main() {
               beside many other already applied in the pipeline.
               <br />
             </p>
-            <button className="btn" id="btn" onClick={togglePara}>
+            <button className="main-btn" id="btn" onClick={togglePara}>
               {btn}
             </button>
           </div>
@@ -89,7 +90,7 @@ function Main() {
             </strong>
           </div>
           <div className="link-item">
-            <a href="../public/pages/contactform.html">Contact Form</a>
+            <Link to="/contactform">Contact Form</Link>
           </div>
           <div className="link-item">
             <a href="https://puchd.ac.in/">
@@ -132,7 +133,6 @@ function Main() {
           </li>
         </ul>
       </div>
-      <hr style={{ borderTop: "0.2em solid #f4a024", margin: "0 0 0 0" }} />
     </div>
   );
 }

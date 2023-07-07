@@ -1,7 +1,7 @@
 body{
     margin: 0;
 }
-h1{
+.about-h1{
     margin: 0;
     border: 0;
     padding: .5em;
@@ -10,12 +10,24 @@ h1{
     color: white;
     font-size: 2.5em;
 }
-.content {
+.about-content {
     font-family: 'Lora', sans-serif;
     font-size: 1.2em;
     /* display: none; */
 }
-.main-container{
+.about-main-container{
     margin: 2em 6em 2em;
     text-align: justify;
+}
+.about-img1 {
+    float: left;
+    margin-right: 2rem;
+    width: 30%;
+    border-radius: 5px;
+}
+.about-img2 {
+    float: right;
+    width: 30%;
+    margin-left: 2rem;
+    border-radius: 5px;
 }

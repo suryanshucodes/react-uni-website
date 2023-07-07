@@ -1,30 +1,32 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Heading() {
+  const logoURL = "./images/logo.png";
   return (
     <div>
       <nav>
         <div className="navbar-div">
           <div className="nav-items first">
-            <a href="#">Home</a>
+            <Link to="#">Home</Link>
           </div>
           <div className="nav-items">
-            <a href="../public/pages/about.html">About</a>
+            <Link to="/about">About</Link>
           </div>
           <div className="nav-items">
-            <a href="academics.html">Academics</a>
+            <Link to="/academics">Academics</Link>
           </div>
           <div className="nav-items">
             <a href="https://uiet.puchd.ac.in/?page_id=5555">Admissions</a>
           </div>
           <div className="nav-items">
-            <a href="https://uiet.puchd.ac.in/?page_id=678">Student</a>
+            <Link to="/students">Students</Link>
           </div>
           <div className="nav-items">
-            <a href="#">Placements</a>
+            <a href="https://www.alumniaffairs.uietpu.in/">Alumni</a>
           </div>
           <div className="nav-items">
-            <a href="../public/pages/contacts.html">Contact Us</a>
+            <Link to="/contacts">Contact Us</Link>
           </div>
         </div>
       </nav>
@@ -34,7 +36,11 @@ function Heading() {
         <div className="logo-name">
           <div className="logo">
             <a href="index.html">
-              <img className="logo" src={"..//..//public/images/logo.png"} alt="UIET Logo" />
+              <img
+                className="logo"
+                src={logoURL}
+                alt="UIET Logo"
+              />
             </a>
           </div>
           <div className="name">
@@ -49,5 +55,4 @@ function Heading() {
     </div>
   );
 }
-
 export default Heading;
